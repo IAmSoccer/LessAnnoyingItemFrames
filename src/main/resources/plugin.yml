@@ -1,0 +1,29 @@
+name: LessAnnoyingItemFrames
+description: Plugin makes it so if you click an item frame on a chest or barrel it doesn't rotate the item frame. Also, if you click on an item frame on a chest or barrel you still open it.
+version: ${project.version}
+api-version: 1.19
+main: com.iamsoccer.plugins.lessannoyingitemframes.LessAnnoyingItemFrames
+author: IAmSoccer
+
+depend: [LuckPerms]
+
+permissions:
+  cancelitemframerotate.enabled:
+    description: Disables item frame rotation on chest/barrels
+    default: false
+  cancelallitemframerotate.enabled:
+    description: Disables item frame rotation everywhere
+    default: false
+  openitemframechest.enabled:
+    description: Click through item frames if on chests/barrels
+    default: false
+commands:
+  togglecancelitemframerotate:
+    usage: /<command>
+    description: Does Stuff.
+  togglecancelallitemframerotate:
+    usage: /<command>
+    description: Does Stuff.
+  toggleopenitemframechest:
+    usage: /<command>
+    description: Does Even More Stuff.
